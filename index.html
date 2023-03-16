@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DPI Changer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>DPI Changer</h1>
+      <div>
+        <label for="primeiroNumero">Sua DPI</label>
+        <input type="number" name="dpi" id="dpi" value="400" />
+        <label for="segundoNumero">Sua Sensitivity</label>
+        <input type="number" name="sens" id="sens" value="1" />
+      </div>
+    </header>
+    <main>
+      <div class="resultados">
+        <section class="calculo">
+          <p class="calculoRotulo">Sua sensitivity em 400 DPI</p>
+          <p class="calculoResultado" id="qdpi"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Sua sensitivity em 800 DPI</p>
+          <p class="calculoResultado" id="odpi"></p>
+        </section>
+        <section class="calculo">
+          <p class="calculoRotulo">Sua sensitivity em 1600 DPI</p>
+          <p class="calculoResultado" id="mdpi"></p>
+        </section>
+      </div>
+      <div class="resultados">
+        <section class="calculo">
+          <p class="calculoRotulo">Sua eDPI</p>
+          <p class="calculoResultado" id="edpi"></p>
+          <a
+            class="github-button"
+            href="https://github.com/dreeiji"
+            data-size="large"
+            aria-label="Follow @dreeiji on GitHub"
+            >Follow @dreeiji</a
+          >
+        </section>
+      </div>
+      <div class="resultados"></div>
+    </main>
+    <script defer src="./js/script.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
